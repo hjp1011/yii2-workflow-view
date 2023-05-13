@@ -1,6 +1,6 @@
 <?php
 
-namespace raoul2000\workflow\view;
+namespace hjp1011\workflow\view;
 
 use Yii;
 use yii\web\AssetBundle;
