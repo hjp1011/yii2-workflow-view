@@ -19,7 +19,7 @@
 	"require" : {
 		"php" : ">=5.4.0",
 		"yiisoft/yii2" : "*",
-		"hjp1011/yii2-workflow" : ">=0.0.18",
+		"hjp1011/yii2-workflow" : ">=1.0.0",
 		"bower-asset/vis" : "*"
 	},
 	"config" : {
