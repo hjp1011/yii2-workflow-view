@@ -1,5 +1,5 @@
 <?php
-namespace raoul2000\workflow\view;
+namespace hjp1011\workflow\view;
 
 use yii\base\Widget;
 use yii\base\InvalidConfigException;
@@ -50,7 +50,7 @@ class WorkflowViewWidget extends Widget
         
         if ( $this->workflow instanceof \yii\base\Model ) {
         	 
-        	if ( ! \raoul2000\workflow\base\SimpleWorkflowBehavior::isAttachedTo($this->workflow)) {
+        	if ( ! \hjp1011\workflow\base\SimpleWorkflowBehavior::isAttachedTo($this->workflow)) {
         		throw new InvalidConfigException("The model passed as parameter 'workflow' is not attached to a SimpleWorkflowBehavior.");
         	}
 
@@ -60,7 +60,7 @@ class WorkflowViewWidget extends Widget
         			$this->workflow->getDefaultWorkflowId()
         		);
         	}
-        } elseif ( $this->workflow instanceof \raoul2000\workflow\base\WorkflowInterface ) {
+        } elseif ( $this->workflow instanceof \hjp1011\workflow\base\WorkflowInterface ) {
         	$this->_workflow = $this->workflow;
         } 
         
